@@ -1,14 +1,24 @@
 <?php
 
-$taskList = ["first task", "Second task"];
+$taskList = ["first task", "Second task", $izvele];
 function showAllTask($inputTasks){
     foreach($inputTasks as $task){
         echo $task . "\n";
     }
 }
 
-function addTask(){
-    echo "To be implemented";
+function addTask($taskList){
+    $izvele = readline("Ievadi uzdevumu ");
+    $taskList[] = $izvele;
+}
+
+function viewTask($taskList){
+    $kursuzd = readline("ievadiet kuru uzdevumu ciparu velaties redzet")
+    $index = $taskNumber - 1; 
+
+    if(isset($taskList[$index])){
+        echo "Uzdevums #$taskNumber: " . $taskList[$index] . "\n";
+    }
 }
 
 
