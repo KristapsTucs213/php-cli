@@ -13,7 +13,7 @@ function addTask($taskList){
 }
 
 function viewTask($taskList){
-    $kursuzd = readline("ievadiet kuru uzdevumu ciparu velaties redzet")
+    $kursuzd = readline("ievadiet kuru uzdevumu ciparu velaties redzet");
     $index = $taskNumber - 1; 
 
     if(isset($taskList[$index])){
